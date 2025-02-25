@@ -1,1 +1,1 @@
-# Sign-up-Form
+sign Up Form project, for The Odin Project, made with html and css. Made using flexbox and form validation on html.
