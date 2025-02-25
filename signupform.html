@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img class="img" src="./images/mies.jpg" alt="a statue at the Barcelona Pavillion desiged by Mies van der Rohe">
+        <div class="logo-background">
+          <img id="odin" src="./images/odin-lined.png" alt="the logo from The Odin Project">
+          <p>ODIN</p>
+        </div>
+        <div class="img-footer">
+          <p>Photo by <a href="https://unsplash.com/es/@serrif_sam">Samantha Serrer</a> on <a href="https://unsplash.com/es">Unsplash</a></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="text-container">
+          <p>This is not a real online service! You know you need something</p>
+          <p>like this in your life to help you realize your deepest dreams.</p>
+          <p>Sign up <i>now</i> to get started. <br></br>You <i>know</i> you want to.</p>
+        </div>
+        <div class="form">
+          <form action="/my-sign-up-form" method="get">
+            <div class="field-title">
+              <label>Let's do this!</label>
+            </div>
+          
+            <fieldset>
+              <div class="form-row">
+                <div class="field-label">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first-name" placeholder="Pedro">
+                </div>
+
+                <div class="field-label">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" placeholder="Almodovar">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field-label">
+                  <label for="user-email">email<span aria-label="required">*</span></label>
+                  <input type="email" id="user-email" name="user-email" placeholder="pedroalmodovar@example.com">
+                </div>
+
+                <div class="field-label">
+                  <label for="phone-number">Phone Number</label>
+                  <input type="tel" id="phone-number" name="phone-number" placeholder="+1 (555) 555-1234" pattern="^\+?[0-9]{1,4}[-\s]?[0-9]{1,3}[-\s]?[0-9]{1,3}[-\s]?[0-9]{1,4} ">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field-label">
+                  <label for="user-password">Password<span aria-label="required">*</span></label>
+                  <input type="password" id="user-password" name="user-password" minlength="8" required>
+                </div>
+
+                <div class="field-label">
+                  <label for="confirm-password">Confirm Password<span aria-label="required">*</span></label>
+                  <input type="password" id="user-password" name="user-password" minlength="8" required>
+                </div>
+              </div>
+
+              <div class="form-footer">
+                <p>Required fields are followed by <strong><span aria-label="required">*</span></strong></p>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+        <div class="button-container">
+          <button type="submit">Create Account</button>
+          <div class="login">
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   
+  </body>

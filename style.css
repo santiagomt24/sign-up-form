@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: odin-font;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Hace que las dos secciones tengan la misma altura */
+}
+
+.left {
+  position: relative; /* Necesario para posicionar elementos dentro de esta imagen */
+  width: 40%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.logo-background {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-background img {
+  height: 100px;
+  width: auto;
+}
+
+.logo-background p {
+  font-family: odin-font;
+  font-size: 80px;
+  margin-top: 15px;
+}
+
+.img-footer {
+  font-size: 10px;
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.img-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.img-footer a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  width: 60%; /* Ancho de la sección derecha */
+  background-color: #f4f4f4; /* Fondo de color gris claro */
+  display: flex;
+  flex-direction: column;
+  
+  position: relative;
+}
+
+.text-container {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  position: absolute;
+  top: 5%;
+}
+
+.form {
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  padding: 5%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.form input {
+  padding: 7px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border: 1px solid #84baef;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+input:invalid {
+  border: 1px solid #d74848;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.form-row {
+  display: flex;
+  gap: 5%;
+  padding-top: 10px;
+}
+
+.field-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.field-label {
+  display: flex;
+  flex-direction: column; /* Pone el label arriba y el input abajo */
+  gap: 5px; /* Espaciado entre label e input */
+  width: 40%;
+}
+
+.form-footer{
+  position: absolute;
+  bottom: 2%;
+}
+
+.button-container{
+  position: absolute;
+  top: 75%;
+  margin: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(28, 69, 130, 0.75);
+  padding: 12px 48px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-weight: 600;
+}
+
+button:hover{
+  background-color: rgba(28, 69, 130, 0.90);
+}
+
+button:active{
+  background-color: rgba(28, 69, 130);
+}
+
+.login {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.login a{
+  color: rgba(28, 69, 130, 0.90);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
